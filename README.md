@@ -70,7 +70,7 @@ After:
 /* Nothing! */
 ```
 
-[Check out our demo](http://jsbin.com/mahimemiti/edit?html,output)
+[Check out our demo](http://jsbin.com/wamiladoga/edit?html,output)
 
 ## FAQ
 
