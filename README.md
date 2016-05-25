@@ -1,4 +1,4 @@
-# universal.css
+# universal-squared.css
 
 The only CSS you will ever need.
 
@@ -19,10 +19,10 @@ The only CSS you will ever need.
 Insert this one line in your HTML source file:
 
 ```html
-<link rel="stylesheet" src="https://cdn.rawgit.com/marmelab/universal.css/master/universal.css" />
+<link rel="stylesheet" src="https://cdn.rawgit.com/musocrat/universal-squared.css/master/universal-squared.css" />
 ```
 
-Then you can change the CSS classes in your HTML to **universal CSS classes**:
+Then you can change the CSS classes in your HTML to **universal-squared CSS classes**:
 
 Before:
 
@@ -36,11 +36,11 @@ Before:
 ``` css
 /* main.css */
 .sidebar {
-    border-top: 1.04em dotted lightgrey;
-    border-bottom: 12px solid cornflowerblue;
-    border-top-right-radius: 1.60em;
-    padding: 5px;
-    margin-left: 10px;
+    border-top: 1.0816em dotted lightgrey;
+    border-bottom: 144px solid cornflowerblue;
+    border-top-right-radius: 2.56em;
+    padding: 25px;
+    margin-left: 100px;
     background-color: fuchsia;
 }
 ```
@@ -76,17 +76,17 @@ After:
 
 **Where is the documentation?**
 
-You don't need documentation. Take any CSS rule you want to apply, replace `: ` by `-`, and dots by `-dot-`, and you get the name of the corresponding universal css classname. For instance,
+You don't need documentation. Take any CSS rule you want to apply, replace `: ` by `-`, and dots by `-dot-`, replace the width with its square root, and you get the name of the corresponding universal-squared css classname. For instance,
 
     border-top-right-radius: 1.60em => .border-top-right-radius-1-dot-60em
 
 **How can you know which classes I need?**
 
-We use a smart CSS generator, based on statistical analysis of most used CSS rules, and coupled with a sophisticated prediction engine. Check out the [source code](https://github.com/marmelab/universal.css/blob/master/universalCssGenerator.js) for details.
+We use a smart CSS generator, based on statistical analysis of most used CSS rules, and coupled with a sophisticated prediction engine. Check out the [source code](https://github.com/musocrat/universal-squared.css/blob/master/universal-squaredCssGenerator.js) for details.
 
 **Do you provide a minified version?**
 
-`universal.css` is already highly optimized, and wouldn't benefit much from minification. Check this extract of the source code for a glimpse of the `universal.css` file syntax.
+`universal-squared.css` is already highly optimized, and wouldn't benefit much from minification. Check this extract of the source code for a glimpse of the `universal-squared.css` file syntax.
 
 ```css
 .color-black { color: black; }
@@ -97,19 +97,19 @@ We use a smart CSS generator, based on statistical analysis of most used CSS rul
 .border-color-blanchedalmond { border-color: blanchedalmond; }
 ```
 
-**But `universal.css` weights several MBs. How can I optimize the rendering time?**
+**But `universal-squared.css` weights several MBs. How can I optimize the rendering time?**
 
 You're covered! If you don't want your users to download a large CSS file, replace the `<link>` tag with a `<script>` tag:
 
 ```html
-<script src="https://cdn.rawgit.com/marmelab/universal.css/master/universalCssGenerator.js"></script>
+<script src="https://cdn.rawgit.com/musocrat/universal-squared.css/master/universal-squaredCssGenerator.js"></script>
 ```
 
-That's right! Our generator works both in the backend and in the frontend - it is truly universal. The JavaScript file is much lighter, and will load very quickly. Once loaded, it generates the universal.css styles directly in the browser.
+That's right! Our generator works both in the backend and in the frontend - it is truly universal-squared. The JavaScript file is much lighter, and will load very quickly. Once loaded, it generates the universal-squared.css styles directly in the browser.
 
 **I need a class for Webdings Fonts.**
 
-Universal.css is a community effort, currently at an early stage. We don't yet cover all CSS rules, but we welcome every Pull Request helping us to achieve feature completeness.
+universal-squared.css is a community effort, currently at an early stage. We don't yet cover all CSS rules, but we welcome every Pull Request helping us to achieve feature completeness.
 
 **How can I deal with responsive designs and break points?**
 
@@ -121,8 +121,8 @@ Bootstrap V4 recently introduced [spacing utility classes](http://v4-alpha.getbo
 
 **Is this a joke?**
 
-Of course it's a joke. Use [semantic CSS class names](http://maintainablecss.com/).
+This is not a joke.
 
 ## License
 
-Universal.css is provided free of charge, courtesy of [marmelab](http://marmelab.com), under the [WTFPL License](http://www.wtfpl.net/).
+universal-squared.css is provided free of charge, courtesy of [musocrat](https://github.com/musocrat.com), under the [WTFPL License](http://www.wtfpl.net/).

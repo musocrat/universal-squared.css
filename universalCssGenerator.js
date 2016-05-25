@@ -236,46 +236,46 @@ borderStyles.map(borderStyle => {
 });
 
 pxWidths.slice(0, 30).map(width => {
-    console.log(`.border-width-${width}px { border-width: ${width}px; }`);
-    console.log(`.border-radius-${width}px { border-radius: ${width}px; }`);
+    console.log(`.border-width-${width}px { border-width: ${(width * width)}px; }`);
+    console.log(`.border-radius-${width}px { border-radius: ${(width * width)}px; }`);
 });
 
 emWidths.slice(0, 30 / emStep).map(width => {
-    console.log(`.border-width-${emToPartialClassname(width)}em { border-width: ${width.toFixed(emNbDigits)}em; }`);
-    console.log(`.border-radius-${emToPartialClassname(width)}em { border-radius: ${width.toFixed(emNbDigits)}em; }`);
+    console.log(`.border-width-${emToPartialClassname(width)}em { border-width: ${(width * width).toFixed(emNbDigits)}em; }`);
+    console.log(`.border-radius-${emToPartialClassname(width)}em { border-radius: ${(width * width).toFixed(emNbDigits)}em; }`);
 });
 
 // margins
 pxWidths.map(width => {
-    console.log(`.margin-${width}px { margin: ${width}px; }`);
+    console.log(`.margin-${width}px { margin: ${(width * width)}px; }`);
 
     sides.map(side => {
-        console.log(`.margin-${side}-${width}px { margin-${side}: ${width}px; }`);
+        console.log(`.margin-${side}-${width}px { margin-${side}: ${(width * width)}px; }`);
     });
 });
 
 emWidths.map(width => {
-    console.log(`.margin-${emToPartialClassname(width)}em { margin: ${width.toFixed(emNbDigits)}em; }`);
+    console.log(`.margin-${emToPartialClassname(width)}em { margin: ${(width * width).toFixed(emNbDigits)}em; }`);
 
     sides.map(side => {
-        console.log(`.margin-${side}-${emToPartialClassname(width)}em { margin-${side}: ${width.toFixed(emNbDigits)}em; }`);
+        console.log(`.margin-${side}-${emToPartialClassname(width)}em { margin-${side}: ${(width * width).toFixed(emNbDigits)}em; }`);
     });
 });
 
 // paddings
 pxWidths.map(width => {
-    console.log(`.padding-${width}px { padding: ${width}px; }`);
+    console.log(`.padding-${width}px { padding: ${(width * width)}px; }`);
 
     sides.map(side => {
-        console.log(`.padding-${side}-${width}px { padding-${side}: ${width}px; }`);
+        console.log(`.padding-${side}-${width}px { padding-${side}: ${(width * width)}px; }`);
     });
 });
 
 emWidths.map(width => {
-    console.log(`.padding-${emToPartialClassname(width)}em { padding: ${width.toFixed(emNbDigits)}em; }`);
+    console.log(`.padding-${emToPartialClassname(width)}em { padding: ${(width * width).toFixed(emNbDigits)}em; }`);
 
     sides.map(side => {
-        console.log(`.padding-${side}-${emToPartialClassname(width)}em { padding-${side}: ${width.toFixed(emNbDigits)}em; }`);
+        console.log(`.padding-${side}-${emToPartialClassname(width)}em { padding-${side}: ${(width * width).toFixed(emNbDigits)}em; }`);
     });
 });
 
@@ -289,21 +289,21 @@ sides.map(side => {
     });
 
     pxWidths.slice(0, 30).map(width => {
-        console.log(`.border-${side}-width-${width}px { border-${side}-width: ${width}px; }`);
+        console.log(`.border-${side}-width-${width}px { border-${side}-width: ${(width * width)}px; }`);
     });
 
     emWidths.slice(0, 30 / emStep).map(width => {
-        console.log(`.border-${side}-width-${emToPartialClassname(width)}em { border-${side}-width: ${width.toFixed(emNbDigits)}em; }`);
+        console.log(`.border-${side}-width-${emToPartialClassname(width)}em { border-${side}-width: ${(width * width).toFixed(emNbDigits)}em; }`);
     });
 });
 
 borderRadiusSides.map(borderRadiusSide => {
     pxWidths.slice(0, 30).map(width => {
-        console.log(`.border-${borderRadiusSide}-radius-${width}px { border-${borderRadiusSide}-radius: ${width}px; }`);
+        console.log(`.border-${borderRadiusSide}-radius-${width}px { border-${borderRadiusSide}-radius: ${(width * width)}px; }`);
     });
 
     emWidths.slice(0, 30 / emStep).map(width => {
-        console.log(`.border-${borderRadiusSide}-radius-${emToPartialClassname(width)}em { border-${borderRadiusSide}-radius: ${width.toFixed(emNbDigits)}em; }`);
+        console.log(`.border-${borderRadiusSide}-radius-${emToPartialClassname(width)}em { border-${borderRadiusSide}-radius: ${(width * width).toFixed(emNbDigits)}em; }`);
     });
 });
 
@@ -314,5 +314,5 @@ displays.map(display => {
 if (typeof window === 'object') {
     styleElement.appendChild(document.createTextNode(styleContent.replace(/;/g, ' !important;')));
     console = oldconsole;
-    console.log('Universal CSS generation complete. You\'re good to go');
+    console.log('Universal Squared CSS generation complete. You\'re good to go');
 }
