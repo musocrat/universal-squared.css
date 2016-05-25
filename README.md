@@ -78,7 +78,7 @@ After:
 
 You don't need documentation. Take any CSS rule you want to apply, replace `: ` by `-`, and dots by `-dot-`, replace the width with its square root, and you get the name of the corresponding universal-squared css classname. For instance,
 
-    border-top-right-radius: 1.60em => .border-top-right-radius-1-dot-60em
+    border-top-right-radius: 2.56em => .border-top-right-radius-1-dot-60em
 
 **How can you know which classes I need?**
 
