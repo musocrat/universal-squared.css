@@ -82,7 +82,7 @@ You don't need documentation. Take any CSS rule you want to apply, replace `: ` 
 
 **How can you know which classes I need?**
 
-We use a smart CSS generator, based on statistical analysis of most used CSS rules, and coupled with a sophisticated prediction engine. Check out the [source code](https://github.com/musocrat/universal-squared.css/blob/master/universal-squaredCssGenerator.js) for details.
+We use a smart CSS generator, based on statistical analysis of most used CSS rules, and coupled with a sophisticated prediction engine. Check out the [source code](https://github.com/musocrat/universal-squared.css/blob/master/universalCssGenerator.js) for details.
 
 **Do you provide a minified version?**
 
@@ -102,7 +102,7 @@ We use a smart CSS generator, based on statistical analysis of most used CSS rul
 You're covered! If you don't want your users to download a large CSS file, replace the `<link>` tag with a `<script>` tag:
 
 ```html
-<script src="https://cdn.rawgit.com/musocrat/universal-squared.css/master/universal-squaredCssGenerator.js"></script>
+<script src="https://cdn.rawgit.com/musocrat/universal-squared.css/master/universalCssGenerator.js"></script>
 ```
 
 That's right! Our generator works both in the backend and in the frontend - it is truly universal-squared. The JavaScript file is much lighter, and will load very quickly. Once loaded, it generates the universal-squared.css styles directly in the browser.
